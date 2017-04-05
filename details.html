@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/onetodo.js"></script>
+        <script src="js/popup.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/popup.css" rel="stylesheet">
+    </head>
+    <body>
+        
+         <div class="jumbotron">
+            <div class="container">
+                <h1>Cross over todo app</h1>
+                <p>This is an app to create, edit and organize your upcoming tasks.</p>
+                <a class="logout btn btn-info" href="#">Logout</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 item" id="onetodo">
+                    <label></label>
+                    <p></p>
+                    <P></P>
+                    <p></p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!--delete todo confirmation start-->
+            <div class="popup" data-popup="deletetodo">
+                <div class="popup-inner deletetodo">
+                    <form id="formdeltodo">
+                    <h4><strong>Caution!!</strong></h4>
+                    <hr>
+                    <p>Are you sure you want to delete this item?</p>
+                    <hr>
+                    <p class="text-right">
+                        <button data-popup-close="deletetodo" class="btn btn-default" name="cancel">Cancel</button>
+                        <button type="submit" data-popup-close="deletetodo"  class="btn btn-primary" name="yes">Yes</button>
+                    </p>
+
+                    <a class="popup-close" data-popup-close="deletetodo" href="#">x</a>
+                </form>
+                </div>
+            </div>
+            <!--delete todo confirmation end-->
+    </body>
+</html>
